@@ -31,13 +31,12 @@ public class getImage extends AppCompatActivity {
             Map config = new HashMap();
             config.put("cloud_name", "yotabites-llc");
             MediaManager.init(this, config);
+            String pub_id = "file" + System.currentTimeMillis();
             String requestId = MediaManager.get().upload(uriProfile)
                     .unsigned("r9ejzsni")
+                    .option("public_id", pub_id)
                     .dispatch();
             Toast.makeText(getApplicationContext(), requestId, Toast.LENGTH_SHORT).show();
-//            Intent intent = new Intent(getImage.this, pushCloudinary.class);
-//            intent.putExtra("test", uriProfile);
-//            startActivity(intent);
         }
     }
 
@@ -46,7 +45,5 @@ public class getImage extends AppCompatActivity {
         intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
         startActivityForResult(Intent.createChooser(intent, "select your profile picture"), CHOOSE_IMAGE);
-//        Intent intent1 = new Intent(MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA);
-//        startActivity(intent1);
     }
 }
