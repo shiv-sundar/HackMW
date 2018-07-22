@@ -20,7 +20,7 @@ public class welcome extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(welcome.this, getImage.class);
+                Intent intent = new Intent(welcome.this, MainActivity.class);
                 startActivity(intent);
             }
         });
