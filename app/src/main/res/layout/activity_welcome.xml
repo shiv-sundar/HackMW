@@ -4,6 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pushCloudinary">
+    tools:context=".welcome">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Welcome to a smart home automation app created for HackMidwest, ImageMation!" />
 </android.support.constraint.ConstraintLayout>
