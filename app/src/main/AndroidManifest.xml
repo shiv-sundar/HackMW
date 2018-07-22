@@ -21,7 +21,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".createTask" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".PhillipsHue" />
+        <activity android:name=".Spotify" />
+        <activity android:name=".nest"></activity>
     </application>
 
 </manifest>

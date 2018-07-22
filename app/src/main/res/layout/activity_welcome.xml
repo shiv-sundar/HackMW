@@ -16,7 +16,7 @@
         android:layout_marginStart="70dp"
         android:layout_marginTop="50dp"
         android:gravity="center"
-        android:text="Welcome to a smart home automation app created for HackMidwest, ImageMation!"
+        android:text="Welcome to ImageMation, a smart home automation app created for HackMidwest!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
